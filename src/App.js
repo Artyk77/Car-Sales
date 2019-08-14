@@ -1,5 +1,6 @@
 import React from 'react';
-
+mport { connect } from 'react-redux'
+import { addItemToCar, removeItemFromCar } from "./actions/";
 import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
