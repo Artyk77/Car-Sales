@@ -1,5 +1,5 @@
 import React from 'react';
-mport { connect } from 'react-redux'
+import { connect } from 'react-redux'
 import { addItemToCar, removeItemFromCar } from "./actions/";
 import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
@@ -27,6 +27,7 @@ const App = props => {
       </div>
     </div>
   );
+};
 
   const mapStateToProps = state => {
     console.log(state);
@@ -38,5 +39,4 @@ const App = props => {
   }
 
   export default connect(mapStateToProps, { addItemToCar, removeItemFromCar })(App);
-};
 
